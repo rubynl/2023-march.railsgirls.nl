@@ -1,0 +1,177 @@
+:root {
+  --body-width: 900px;
+  --spacing-medium: 40px;
+  --spacing-small: 20px;
+  --spacing-tiny: 10px;
+  --body-background: #FFFFFF;
+  --body-color: #444;
+  --heading-color: #444;
+  --action-color: #EB4747;
+  --link-color: #ea386b;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  margin: 0;
+  color: var(--body-color);
+  font-size: 130%;
+  line-height: 1.5;
+  background: var(--body-background);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  &.home {
+    background: url(../images/blob.svg), url(../images/blob2.svg), url(../images/blob.svg), var(--body-background);
+    background-position: top 500px left -300px, top 60% right -300px, left bottom -200px, center center;
+    background-size: 1000px 1000px, 800px 800px, 500px 500px, cover;
+    background-repeat: no-repeat;
+  }
+}
+
+.go-to-content-link {
+  position: absolute;
+  margin: 0;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+p {
+  margin: 0 0 1em 0;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+a {
+  color: var(--link-color);
+  text-decoration: underline;
+  text-decoration-color: var(--link-color);
+  text-decoration-skip: edges;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+ul,
+ol {
+  margin: 0 0 20px 40px;
+
+  & ul,
+  & ol {
+    margin-bottom: 0;
+  }
+}
+
+ul {
+  list-style: disc;
+}
+ol {
+  list-style: number;
+}
+
+h1 {
+  margin: 0 0 25px 0;
+  color: var(--heading-color);
+  font-size: 2.5rem;
+  font-weight: 800;
+  text-align: center;
+  line-height: 1.2;
+}
+
+h2 {
+  margin-bottom: var(--spacing-small);
+  color: var(--heading-color);
+  font-size: 2.2rem;
+  font-weight: 900;
+  line-height: 1.1;
+  text-center: center;
+}
+
+h3 {
+  margin-bottom: var(--spacing-tiny);
+  color: var(--heading-color);
+  font-size: 1.4rem;
+  font-weight: 900;
+  line-height: 1.1;
+}
+
+h4 {
+  margin-bottom: var(--spacing-tiny);
+  color: var(--heading-color);
+  font-size: 1.6rem;
+  font-weight: 900;
+  line-height: 1.1;
+}
+
+hr {
+  margin: 3rem 0;
+  border: none;
+  border-top: 2px dotted #bbb;
+}
+
+strong {
+  font-weight: bold;
+}
+
+em {
+  font-style: italic;
+}
+
+img {
+  max-width: 100%;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-bold {
+  font-weight: bold;
+}
+
+.section {
+  margin: var(--spacing-medium) auto;
+  padding: 0 var(--spacing-small);
+  max-width: var(--body-width);
+
+  @media (max-width: 640px) {
+    margin-top: var(--spacing-small);
+  }
+}
+
+.button {
+  position: relative;
+  display: inline-block;
+  padding: 5px 20px;
+  color: #FFF;
+  font-size: 1.8rem;
+  background-color: #ff0049;
+  border-radius: 5px;
+  transition: all 200ms ease-in-out;
+  text-decoration: none;
+
+  &:hover {
+    top: 2px;
+    background-color: #d9003e;
+  }
+}
+
+footer {
+  & .section {
+    font-size: 1.2rem;
+  }
+}

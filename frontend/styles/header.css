@@ -1,0 +1,26 @@
+.header {
+  margin: 0 auto;
+  padding: var(--spacing-medium) var(--spacing-small) 0 var(--spacing-small);
+  max-width: var(--body-width);
+
+  text-align: center;
+
+  & > a {
+    display: inline-block;
+  }
+
+  & img {
+    display: block;
+    width: 350px;
+    max-width: 100%;
+  }
+
+  @media (max-width: 640px) {
+    display: block;
+    padding-top: var(--spacing-small);
+
+    & img {
+      margin: 0 auto;
+    }
+  }
+}
