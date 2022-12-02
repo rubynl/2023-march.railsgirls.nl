@@ -1,0 +1,47 @@
+.choice-manager {
+  position: fixed;
+  bottom: -200px;
+  right: 0;
+  padding: var(--spacing-tiny);
+  font-size: 80%;
+  background-color: #FFF;
+  border-color: #FCF4F6;
+  border-style: solid;
+  border-top-width: 2px;
+  border-left-width: 2px;
+  border-top-left-radius: 5px;
+  text-align: right;
+  transition: all 500ms ease-in-out;
+
+  &.choice-manager-visible {
+    bottom: 0;
+  }
+
+  & .button-group {
+    margin-top: var(--spacing-tiny);
+  }
+
+  & .button {
+    font-size: inherit;
+  }
+
+  @media (max-width: 640px) {
+    left: 0;
+    border-left-width: 0;
+    border-radius: 0;
+    text-align: center;
+  }
+}
+
+.choise-manager-embedded {
+  margin-bottom: var(--spacing-tiny);
+
+  & .button {
+    margin-bottom: var(--spacing-tiny);
+    font-size: 80%;
+
+    @media (max-width: 640px) {
+      width: 100%;
+    }
+  }
+}

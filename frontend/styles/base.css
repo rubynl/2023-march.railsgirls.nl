@@ -37,6 +37,12 @@ body {
     background-size: 1000px 1000px, 800px 800px, 500px 500px, cover;
     background-repeat: no-repeat;
   }
+
+  &.choice-manager-spacing {
+    @media (max-width: 1200px) {
+      padding-bottom: 80px;
+    }
+  }
 }
 
 .go-to-content-link {
@@ -154,19 +160,33 @@ img {
 }
 
 .button {
+  --button-color: #ff0049;
   position: relative;
   display: inline-block;
   padding: 5px 20px;
   color: #FFF;
   font-size: 1.8rem;
-  background-color: #ff0049;
+  background-color: var(--button-color);
+  border: 2px solid var(--button-color);
   border-radius: 5px;
   transition: all 200ms ease-in-out;
   text-decoration: none;
+  cursor: pointer;
 
   &:hover {
+    --button-color: #d9003e;
     top: 2px;
-    background-color: #d9003e;
+    background-color: var(--button-color);
+  }
+
+  &.button-secondary {
+    color: var(--button-color);
+    background-color: #FFF;
+    border: 2px solid var(--button-color);
+
+    &:hover {
+      background-color: #EEE;
+    }
   }
 }
 
