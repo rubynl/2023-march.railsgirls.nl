@@ -1,6 +1,7 @@
 ---
 layout: page
 title: "Code of Conduct"
+description: "The Rails Girls The Netherlands community members follow this Code of Conduct. By participating in this project you agree to abide by its terms."
 ---
 
 ## Our Pledge

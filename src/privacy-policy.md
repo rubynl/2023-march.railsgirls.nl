@@ -1,6 +1,7 @@
 ---
 layout: page
 title: "Privacy Policy"
+description: "The Rails Girls The Netherlands Privacy Policy. This policy applies to all Rails Girls The Netherlands websites."
 ---
 
 Last updated at: 2022-12-03
