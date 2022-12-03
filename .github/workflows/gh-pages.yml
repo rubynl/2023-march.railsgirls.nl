@@ -26,6 +26,7 @@ jobs:
       - name: Build
         env:
           BRIDGETOWN_ENV: production
+          PLAUSIBLE_DOMAIN: ${{ secrets.PLAUSIBLE_DOMAIN }}
         run: bin/bridgetown deploy
 
       - uses: actions/upload-pages-artifact@v1

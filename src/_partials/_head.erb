@@ -7,6 +7,7 @@
 <link rel="apple-touch-icon" href="<%= image_path("images/apple-touch-icon.png") %>">
 <link href="<%= image_path "images/favicon-16.png" %>" rel="icon" type="image/png" sizes="16x16">
 <link href="<%= image_path "images/favicon-32.png" %>" rel="icon" type="image/png" sizes="32x32">
+<meta http-equiv="Content-Security-Policy" content="<%= csp_policy %>">
 
 <meta name="description" content="<%= page_meta_description %>" />
 
@@ -28,3 +29,8 @@
 <link rel="stylesheet" href="<%= asset_path :css %>" />
 <script src="<%= asset_path :js %>" defer></script>
 <%= live_reload_dev_js %>
+
+<% if Bridgetown.env.production? %>
+  <script async defer data-domain="<%= plausible_domain %>" src="https://plausible.io/js/plausible.js"></script>
+  <script><%= plausible_script %></script>
+<% end %>

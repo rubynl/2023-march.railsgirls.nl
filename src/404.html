@@ -7,3 +7,7 @@ title: "Page not found"
 <p>The requested page could not be found.</p>
 
 <p>Go back <a href="/">home</a> or contact us at <a href="mailto:contact@railsgirls.nl">contact@railsgirls.nl</a>.</p>
+
+<% if Bridgetown.env.production? %>
+<script><%= raw plausible_404_script %></script>
+<% end %>

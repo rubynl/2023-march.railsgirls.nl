@@ -3,7 +3,7 @@ layout: page
 title: "Privacy Policy"
 ---
 
-Last updated at: 2022-12-02
+Last updated at: 2022-12-03
 
 This Privacy Policy describes how and why the Rails Girls The Netherlands organizers ([Stichting Ruby NL](https://rubynl.org)) may collect, store, use and/or share your information when you use Rails Girls The Netherlands event websites.
 
@@ -77,6 +77,8 @@ To organize Rails Girls Netherlands events, we use third-party services. Listed 
     - A Google Maps element is embedded on our websites to display the event venue location.
 - GitHub
     - Our websites are hosted by GitHub using GitHub pages.
+- Plausible
+    - We track some basic page view analytics using Plausible, a privacy-friendly analytics service. No cookies are set by this service.
 
 ## Links to other sites
 
