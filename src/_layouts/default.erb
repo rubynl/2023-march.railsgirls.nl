@@ -5,9 +5,9 @@
   </head>
   <body class="<%= resource.data.layout %> <%= resource.data.page_class %>">
     <a href="#main" class="go-to-content-link">Skip to main content</a>
-    <header class="header" role="banner">
-      <a href="/"><img src="<%= image_path "images/logo.svg" %>" alt="Rails Girls Netherlands"></a>
-    </header>
+    <% unless page.relative_url == "/" %>
+      <%= partial "header" %>
+    <% end %>
 
     <main id="main">
       <%= yield %>

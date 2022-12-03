@@ -1,4 +1,42 @@
-.intro-section {
+.section-intro {
+  margin-top: 0;
+}
+
+.section-intro-content {
+  padding-top: var(--spacing-small);
+}
+
+@media (max-width: 640px) and (max-height: 825px) {
+  .section-intro {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+    height: calc(100vh - 90px);
+    min-height: 640px;
+
+    & header {
+      flex-grow: 0;
+    }
+
+    & h1 {
+      @media (max-height: 750px), (max-width: 425px) {
+        margin-left: calc(var(--spacing-small) / 2 * -1);
+        margin-right: calc(var(--spacing-small) / 2 * -1);
+        margin-bottom: 15px;
+        font-size: 2.2rem;
+      }
+    }
+  }
+
+  .section-intro-content {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+}
+
+.large-text {
   font-size: 1.8rem;
   font-weight: 300;
   line-height: 1.3;

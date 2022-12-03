@@ -4,12 +4,16 @@ page_class: home
 full_title: "Rails Girls NL"
 ---
 
-<section class="section text-center">
-  <h1>18th of March, 2023<br>Rotterdam</h1>
-  <p class="intro-section">A free, one day workshop. Discover the exciting world of web development through Ruby on Rails. With the help and guidance of our coaches, you can create a real web application in a fun and relaxed environment.</p>
+<section class="section text-center section-intro">
+  <%= partial "header" %>
 
-  <p><%= link_to "Sign up!", site.metadata.attendee_sign_up_form_url, :class => "button sign-up-button" %></p>
-  <p>Want to help out as a coach? <%= link_to "Sign up using the coach form!", site.metadata.coach_sign_up_form_url %></p>
+  <div class="section-intro-content">
+    <h1>18th of March, 2023<br>Rotterdam</h1>
+    <p class="large-text">A free, one day workshop. Discover the exciting world of web development through Ruby on Rails. With the help and guidance of our coaches, you can create a real web application in a fun and relaxed environment.</p>
+
+    <p><%= link_to "Sign up!", site.metadata.attendee_sign_up_form_url, :class => "button sign-up-button" %></p>
+    <p>Want to help out as a coach? <%= link_to "Sign up using the coach form!", site.metadata.coach_sign_up_form_url %></p>
+  </div>
 </section>
 
 <section class="section schedule" id="schedule">
