@@ -191,7 +191,10 @@ img {
 }
 
 footer {
+
   & .section {
+    padding-top: var(--spacing-medium);
+    border-top: 4px solid #FFD9DE;
     font-size: 1.2rem;
   }
 
