@@ -194,4 +194,29 @@ footer {
   & .section {
     font-size: 1.2rem;
   }
+
+  & ul {
+    margin-top: var(--spacing-small);
+  }
+
+  & li {
+    display: list-item;
+  }
+
+  @media (min-width: 640px) {
+    text-align: center;
+    & ul {
+      margin: 0;
+    }
+
+    & li {
+      display: inline-block;
+
+      &:not(:first-child) {
+        &:before {
+          content: " | "
+        }
+      }
+    }
+  }
 }
