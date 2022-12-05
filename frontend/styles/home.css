@@ -95,6 +95,8 @@ iframe {
 }
 
 .team-section {
+  --columns: 5;
+
   & ul {
     --gap: var(--spacing-small);
     display: flex;
@@ -108,11 +110,8 @@ iframe {
   }
 
   & li {
+    flex-basis: calc((100% / var(--columns)) - var(--gap));
     text-align: center;
-  }
-
-  & img {
-    max-width: 200px;
   }
 
   & span {
@@ -121,12 +120,18 @@ iframe {
   }
 
   @media (max-width: 900px) {
-    & li {
-      flex-basis: calc((100vw / 2) - var(--gap) * 2);
-    }
+    --columns: 3;
 
-    & img {
-      max-width: 150px;
+    & li {
+      flex-basis: calc((100vw / var(--columns)) - var(--spacing-small) - (var(--gap) / var(--columns)));
+    }
+  }
+
+  @media (max-width: 550px) {
+    --columns: 2;
+
+    & ul {
+      gap: var(--spacing-tiny);
     }
   }
 }
