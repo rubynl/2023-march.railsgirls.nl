@@ -62,7 +62,7 @@ Instances of abusive, harassing, or otherwise unacceptable behavior may be
 reported by contacting the project team at:
 
 - [Rayta van Rijswijk (she/her)](mailto:rayta@rubynl.org)
-- [Floor Drees (she/her)](#TODO)
+- [Floor Drees (she/her)](mailto:floordrees@gmail.com)
 - [Tom de Bruijn (he/him)](mailto:tom@rubynl.org)
 - [Arno Fleming (he/him)](mailto:arno@rubynl.org)
 
