@@ -4,7 +4,7 @@ title: "Privacy Policy"
 description: "The Rails Girls The Netherlands Privacy Policy. This policy applies to all Rails Girls The Netherlands websites."
 ---
 
-Last updated at: 2022-12-14
+Last updated at: 2023-02-28
 
 This Privacy Policy describes how and why the Rails Girls The Netherlands organizers ([Stichting Ruby NL](https://rubynl.org)) may collect, store, use and/or share your information when you use Rails Girls The Netherlands event websites.
 
@@ -49,6 +49,8 @@ The information collected during registration will be used for the organization 
 
 If you have agreed to receive communication about a waiting list for the event, when a spot opens up, we will reach out to you if you've been chosen from the waiting list.
 If you have agreed to receive communication about future updates, we will contact you when a new event is scheduled.
+
+If you sign up as a coach and agree to publicly list your name on the website, we will add your name to the coaches section once the coach selection is made.
 
 After the event we may also reach out with a feedback form. This information will be collected anonymously.
 
