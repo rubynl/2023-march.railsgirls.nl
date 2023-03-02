@@ -136,6 +136,46 @@ iframe {
   }
 }
 
+ul.coaches-list {
+  justify-content: flex-start;
+}
+
+.coaches-list li {
+  --columns: 3;
+  display: flex;
+  align-items: center;
+
+  @media (max-width: 900px) {
+    --columns: 2;
+  }
+
+  @media (max-width: 600px) {
+    --columns: 1;
+  }
+}
+.coaches-list li span {
+  font-size: 90%;
+  text-align: left;
+}
+
+.coach-placeholder {
+  --size: 50px;
+  margin-right: 10px;
+  min-width: var(--size);
+  min-height: var(--size);
+  background-image: url(../images/brandmark.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 80%;
+  filter: hue-rotate(340deg);
+
+  @media (max-width: 600px) {
+    --size: 40px;
+    margin-right: 10px;
+    background-size: 95%;
+  }
+}
+
 [class^=hero-] {
   display: block;
   width: 100%;
