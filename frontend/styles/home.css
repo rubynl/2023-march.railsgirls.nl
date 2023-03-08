@@ -80,7 +80,7 @@ iframe {
 
   & th {
     padding-right: 15px;
-    min-width: 110px;
+    min-width: 140px;
     font-weight: bold;
     font-feature-settings: "tnum";
     font-variant-numeric: tabular-nums;
