@@ -5,6 +5,9 @@
   </head>
   <body class="<%= resource.data.layout %> <%= resource.data.page_class %>">
     <a href="#main" class="go-to-content-link">Skip to main content</a>
+    <div class="archive-banner">
+      This website is archived. Please visit the <a href="https://railsgirls.nl">main website</a> for new workshops.
+    </div>
     <% unless page.relative_url == "/" %>
       <%= partial "header" %>
     <% end %>
