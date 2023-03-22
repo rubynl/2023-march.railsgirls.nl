@@ -14,7 +14,7 @@ module ScriptHelper
   def plausible_domain
     env_domain = ENV.fetch("PLAUSIBLE_DOMAIN", "").strip
     if env_domain.empty?
-      "railsgirls.nl"
+      "2023-march.railsgirls.nl"
     else
       env_domain
     end
