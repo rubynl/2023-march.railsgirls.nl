@@ -17,7 +17,7 @@
 # https://learnxinyminutes.com/docs/yaml/
 #
 
-url: "https://railsgirls.nl" # the base hostname & protocol for your site, e.g. https://example.com
+url: "https://2023-march.railsgirls.nl" # the base hostname & protocol for your site, e.g. https://example.com
 
 permalink: pretty
 template_engine: erb
