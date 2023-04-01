@@ -8,7 +8,7 @@ module ScriptHelper
       else
         "'sha256-#{sha256_for plausible_script}' 'sha256-#{sha256_for plausible_404_script}'"
       end
-    raw "default-src 'none'; script-src 'self' https://plausible.io #{script_src}; connect-src 'self' https://plausible.io; img-src 'self'; style-src 'self' 'unsafe-inline'; font-src 'self'; base-uri 'self'; form-action 'self'"
+    raw "default-src 'none'; script-src 'self' https://plausible.io #{script_src}; connect-src 'self' https://plausible.io; frame-src https://www.google.com; img-src 'self'; style-src 'self' 'unsafe-inline'; font-src 'self'; base-uri 'self'; form-action 'self'"
   end
 
   def plausible_domain
