@@ -98,4 +98,4 @@ We may update our Privacy Policy from time to time. When changes are made, we wi
 
 ## Contact
 
-If you have any questions or suggestions about our Privacy Policy, do not hesitate to [contact us](mailto:contact@railsgirls.nl).
+If you have any questions or suggestions about our Privacy Policy, do not hesitate to [contact us](mailto:contact@rubynl.org).
