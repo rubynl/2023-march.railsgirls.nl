@@ -9,7 +9,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
 
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
@@ -17,7 +17,7 @@ jobs:
           bundler-cache: true
 
       - name: Setup Node
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v7
         with:
           node-version: "16"
           cache: "yarn"
@@ -29,7 +29,7 @@ jobs:
           PLAUSIBLE_DOMAIN: ${{ secrets.PLAUSIBLE_DOMAIN }}
         run: bin/bridgetown deploy
 
-      - uses: actions/upload-pages-artifact@v1
+      - uses: actions/upload-pages-artifact@v5
         with:
           path: ./output
 
@@ -49,4 +49,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v1
+        uses: actions/deploy-pages@v4
